@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  #piano {
+    border: 5px solid #3D3D3D;
+    background-color: #3D3D3D;
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 5px #344CB7; /* Inner border */
+  }
+  
+  .keys {
+    background-color: #040404;
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    overflow: hidden;
+  }
+  
+  .key {
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    float: left;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .key.black--key::after {
+    background-color: #1d1e22;
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .logo {
+    width: 300px;
+    position: absolute;
+    top: 23px;
+    left: 0;
+  }
+
+  h1 {
+    position: absolute;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+    top: 20px;
+    left: 900px;
+    font-size: medium;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    #piano {
+      width: 358px;
+    }
+  
+    .keys {
+      width: 318px;
+    }
+  
+    .logo {
+      width: 200px;
+    }
+
+    h1 {
+        top: 15px;
+        left: 270px;
+    }
+  }
+
+  @media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+      width: 675px;
+    }
+  
+    .keys {
+      width: 633px;
+    }
+  }
